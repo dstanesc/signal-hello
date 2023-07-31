@@ -1,0 +1,41 @@
+{
+  "name": "signal-hello",
+  "description": "simple fluid signal test",
+  "version": "0.0.1",
+  "dependencies": {
+    "@fluidframework/common-utils": "^0.32.2",
+    "@fluidframework/azure-client": "1.0.1",
+    "@fluid-experimental/data-objects": "1.3.5",
+    "@fluidframework/datastore-definitions": "1.3.5",
+    "@fluidframework/container-loader": "1.3.5",
+    "@fluidframework/fluid-static": "1.3.5",
+    "@fluidframework/test-client-utils": "1.3.5",
+    "@fluidframework/test-runtime-utils": "1.3.5",
+    "lodash": "^4.17.21",
+    "plotly.js-dist-min": "^2.23.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "uuid": "^9.0.0"
+  },
+  "scripts": {
+    "clean": "rimraf dist node_modules",
+    "build": "webpack",
+    "start": "webpack-dev-server --mode development --open",
+    "start:frs": "webpack-dev-server --port 9000 --mode development --open"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "@babel/preset-react": "^7.18.6",
+    "assert": "^2.0.0",
+    "babel-loader": "^8.2.5",
+    "buffer": "^6.0.3",
+    "css-loader": "^6.7.1",
+    "rimraf": "3.0.2",
+    "style-loader": "^3.3.1",
+    "url": "^0.11.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
+  }
+}
